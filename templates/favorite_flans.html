@@ -1,0 +1,33 @@
+{% extends 'base.html' %} {% block content %}
+<div class="container">
+  <h1 class="my-4">Mis Flanes Favoritos</h1>
+  <div class="row">
+    {% for favorito in favoritos %}
+    <div class="col-lg-4 col-md-6 mb-4">
+      <div class="card">
+        <a href="{% url 'flan_detail' favorito.flan.flan_uuid %}">
+          <img
+            src="{{ favorito.flan.image_url }}"
+            class="card-img-top flan-image"
+            alt="{{ favorito.flan.name }}"
+          />
+        </a>
+        <div class="card-body">
+          <h5 class="card-title">{{ favorito.flan.name }}</h5>
+          <p class="card-text">{{ favorito.flan.description }}</p>
+        </div>
+        <div class="card-footer">
+          <a
+            href="{% url 'toggle_favorite_flan' favorito.flan.flan_uuid %}"
+            class="btn btn-danger"
+            >Quitar de Favoritos</a
+          >
+        </div>
+      </div>
+    </div>
+    {% empty %}
+    <p>No tienes flanes favoritos aún.</p>
+    {% endfor %}
+  </div>
+</div>
+{% endblock %}

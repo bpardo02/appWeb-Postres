@@ -1,0 +1,94 @@
+# Archivos y carpetas específicas de Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.env
+*.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+onlyflans/
+
+# Archivos de configuración del entorno virtual
+.Python
+
+# Archivos de configuración y dependencias
+*.sqlite3
+db.sqlite3
+
+# Carpetas que contienen claves y configuraciones secretas
+*.env
+.env
+
+# Archivos de configuración específicos del sistema operativo
+.DS_Store
+Thumbs.db
+
+# Archivos de log y de compilación
+*.log
+*.pot
+*.mo
+*.swp
+*.swo
+*.gz
+*.out
+
+# Archivos creados por editores/IDE populares
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Archivos y carpetas de Django
+/media
+/staticfiles
+*.pot
+
+# Archivos de migraciones
+**/migrations/*.py
+!**/migrations/__init__.py
+
+# Archivos de cobertura de pruebas y profiling
+.coverage
+*.cover
+*.py,cover
+.cache
+coverage.xml
+nosetests.xml
+test-result.xml
+
+# Archivos generados por pytest
+.pytest_cache/
+
+# Información de la versión de pip
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Archivos de lock o históricos
+*.lock
+yarn-debug.log*
+yarn-error.log*
+
+# Configuraciones específicas del sistema operativo
+*.bak
+*.swp
+
+# Docker y Contenedores
+docker-compose.override.yml
+Dockerfile
+*.dockerfile
+
+# Archivos de AWS Elastic Beanstalk
+.elasticbeanstalk/
+
+# Archivos de Heroku
+Procfile
+
+# Archivos de configuración y almacenamiento de secretos de Celery
+celerybeat-schedule
+
+# Archivos de gestión del entorno virtual de Poetry
+poetry.lock

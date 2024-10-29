@@ -1,0 +1,29 @@
+{% extends 'base.html' %} {% block content %}
+<div class="container">
+  <h1 class="my-4">Bienvenido {{ user.get_username }}.</h1>
+  <div class="row">
+    {% for flan in flanes %}
+    <div class="col-lg-4 col-md-6 mb-4">
+      <div class="card">
+        <img
+          src="{{ flan.image_url }}"
+          class="card-img-top flan-image"
+          alt="{{ flan.name }}"
+        />
+        <div class="card-body">
+          <h5 class="card-title">{{ flan.name }}</h5>
+          <p class="card-text">{{ flan.description }}</p>
+        </div>
+        <div class="card-footer">
+          <a
+            href="{% url 'flan_detail' flan.flan_uuid %}"
+            class="btn btn-primary"
+            >Ver Detalles</a
+          >
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</div>
+{% endblock %}

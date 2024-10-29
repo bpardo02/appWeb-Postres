@@ -1,0 +1,18 @@
+{% extends 'base.html' %} {% block content %}
+<h1>{{ flan.name }}</h1>
+<img
+  src="{{ flan.image_url }}"
+  alt="Imagen de {{ flan.name }}"
+  class="flan-image"
+/>
+<p>{{ flan.description }}</p>
+
+{% if is_favorited %}
+<a href="{% url 'toggle_favorite_flan' flan.flan_uuid %}"
+  >Quitar de Favoritos</a
+>
+{% else %}
+<a href="{% url 'toggle_favorite_flan' flan.flan_uuid %}"
+  >Agregar a Favoritos</a
+>
+{% endif %} {% endblock %}

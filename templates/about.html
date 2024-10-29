@@ -1,0 +1,133 @@
+{% extends 'base.html' %} {% load static %} {% block content %}
+<div class="container mt-5">
+  <div class="row">
+    <div class="col-12 text-center mb-4">
+      <h1>Sobre Nosotros</h1>
+      <p class="text-muted">
+        Conoce más sobre nuestra empresa de flanes y nuestra pasión por el
+        sabor.
+      </p>
+    </div>
+  </div>
+
+  <!-- Imagen destacada de la empresa -->
+  <div class="row mb-5">
+    <div class="col-12 text-center">
+      <img
+        src="{% static 'img/flan4.jpg' %}"
+        alt="Imagen de flanes deliciosos"
+        class="img-fluid"
+        style="max-width: 40%; height: auto; border-radius: 10px"
+      />
+    </div>
+  </div>
+
+  <!-- Sección de la historia o descripción de la empresa -->
+  <div class="row">
+    <div class="col-md-12 text-center">
+      <h3>Nuestra Historia</h3>
+      <p>
+        Somos una empresa familiar dedicada a la elaboración de flanes
+        artesanales con recetas transmitidas de generación en generación.
+        Nuestros flanes están hechos con ingredientes frescos y de alta calidad,
+        combinando tradición y sabor en cada porción.
+      </p>
+    </div>
+  </div>
+
+  <!-- Sección de Misión y Visión -->
+  <div class="row mt-5">
+    <div class="col-md-6 text-center">
+      <h3>Nuestra Misión</h3>
+      <p>
+        Llevar el sabor auténtico y casero de nuestros flanes a cada hogar,
+        ofreciendo una experiencia única y deliciosa que deleite a nuestros
+        clientes y sus familias.
+      </p>
+    </div>
+    <div class="col-md-6 text-center">
+      <h3>Nuestra Visión</h3>
+      <p>
+        Convertirnos en la marca de flanes más querida y reconocida,
+        expandiéndonos a nivel nacional y siendo sinónimo de calidad y tradición
+        en postres.
+      </p>
+    </div>
+  </div>
+
+  <!-- Sección de Valores -->
+  <!-- Sección de Valores -->
+  <div class="row mt-5">
+    <div class="col-12 text-center">
+      <h3>Nuestros Valores</h3>
+      <ul class="list-unstyled">
+        <li>
+          <strong>Calidad:</strong> Utilizamos ingredientes de la mejor calidad
+          en cada flan.
+        </li>
+        <li>
+          <strong>Tradición:</strong> Respetamos nuestras recetas familiares y
+          las adaptamos con cariño.
+        </li>
+        <li>
+          <strong>Innovación:</strong> Experimentamos con nuevos sabores para
+          sorprender a nuestros clientes.
+        </li>
+        <li>
+          <strong>Compromiso:</strong> Nos dedicamos a brindar un producto
+          delicioso y confiable.
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Sección de imágenes de productos -->
+  <div class="row mt-5">
+    <div class="col-12 text-center">
+      <h3>Nuestros Flanes</h3>
+      <p>Descubre nuestra deliciosa variedad de flanes:</p>
+    </div>
+
+    <!-- Ejemplo de tres imágenes de flanes -->
+    <div class="col-md-4 text-center mb-4">
+      <img
+        src="{% static 'img/flan1.jpg' %}"
+        alt="Flan"
+        class="img-fluid"
+        style="
+          width: 100%;
+          height: 250px;
+          border-radius: 10px;
+          object-fit: cover;
+        "
+      />
+    </div>
+    <div class="col-md-4 text-center mb-4">
+      <img
+        src="{% static 'img/flan2.jpg' %}"
+        alt="Flan"
+        class="img-fluid"
+        style="
+          width: 100%;
+          height: 250px;
+          border-radius: 10px;
+          object-fit: cover;
+        "
+      />
+    </div>
+    <div class="col-md-4 text-center mb-4">
+      <img
+        src="{% static 'img/flan3.webp' %}"
+        alt="Flan"
+        class="img-fluid"
+        style="
+          width: 100%;
+          height: 250px;
+          border-radius: 10px;
+          object-fit: cover;
+        "
+      />
+    </div>
+  </div>
+</div>
+{% endblock %}
